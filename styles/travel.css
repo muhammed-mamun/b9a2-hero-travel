@@ -120,6 +120,10 @@ select {
   text-align: left;
 }
 
+.newsletter {
+  max-width: 1440px;
+  padding: 100px 135px 0 135px;
+}
 /* Footer Section */
 footer {
   max-width: 1440px;
