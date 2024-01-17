@@ -123,6 +123,61 @@ select {
 .newsletter {
   max-width: 1440px;
   padding: 100px 135px 0 135px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 24px;
+  height: 422px;
+}
+.newsletter-left {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+}
+.newsletter-title {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 800;
+}
+.newsletter-content {
+  width: 350px;
+  color: #5a5a5d;
+  font-family: Mulish;
+  line-height: 26px;
+  max-width: 350px;
+}
+input[type="email"],
+input[type="text"] {
+  width: 393px;
+  height: 52px;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  color: rgba(19, 19, 24, 0.3);
+  font-family: Mulish;
+  border: 0;
+  padding: 48px;
+  padding: 16px 251px 16px 20px;
+  outline: #ccc8c8;
+}
+.btn {
+  width: 393px;
+  height: 52px;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-weight: 800;
+  border: 0;
+}
+.newsletter-right {
+  background-image: url("../images//Rectangle 8 (1).png");
+  background-repeat: no-repeat;
+}
+.newsletter-right > img {
+  margin: 200px auto auto 230px;
+  width: 60%;
 }
 /* Footer Section */
 footer {
