@@ -13,6 +13,13 @@
   font-weight: 700;
   border: 0;
 }
+.section-title {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 40px;
+  font-weight: 800;
+}
 /* Header related styles */
 header {
   max-width: 1440px;
@@ -156,8 +163,90 @@ hr {
   text-align: center;
   margin-top: 50px;
 }
+/* Destination related style */
+
+.destination {
+  max-width: 1440px;
+  padding: 0 135px 100px 135px;
+}
+.destination-description {
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-family: Mulish;
+  width: 643px;
+  margin: auto;
+  padding-bottom: 48px;
+}
+.destination-box {
+  display: grid;
+  grid-template-rows: 300px 286px 300px;
+  gap: 24px;
+}
+.destination-img-box1 {
+  display: grid;
+  grid-template-columns: 573px 573px;
+  gap: 24px;
+}
+.destination-img-box2 {
+  display: grid;
+  grid-template-columns: 374px 474px 274px;
+  gap: 24px;
+}
+.destination-img-box3 {
+  display: grid;
+  grid-template-columns: 473px 673px;
+  gap: 24px;
+}
+
+/* WhyUs related styles */
+.whyus {
+  max-width: 1440px;
+  padding: 0 135px 100px 135px;
+}
+.whyus-card {
+  display: grid;
+  grid-template-rows: 284px 284px;
+  gap: 24px;
+}
+.whyus-card-top {
+  display: grid;
+  grid-template-columns: 573px 573px;
+  gap: 24px;
+}
+.whyus-card-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 573px;
+  height: 284px;
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.card img {
+  margin-top: 32px;
+  margin-left: 32px;
+}
+.card h3 {
+  color: #131318;
+  text-align: left;
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 800;
+  margin-left: 32px;
+}
+.card p {
+  color: #5a5a5d;
+  font-family: Mulish;
+  line-height: 26px;
+  width: 486px;
+  margin-left: 32px;
+}
 /* Mobile Responsive */
 @media screen and (max-width: 600px) {
+  /* Header */
   nav ul {
     display: none;
   }
@@ -165,6 +254,7 @@ hr {
     display: block;
   }
   header {
+    max-width: 375px;
     padding: 20px 20px 100px 20px;
   }
   .banner-item {
@@ -194,5 +284,118 @@ hr {
     grid-template-rows: repeat(4, 1fr);
     margin: 0 auto;
     justify-content: center;
+  }
+
+  /* Destination */
+  .destination {
+    max-width: 375px;
+    padding: 0 20px 100px 20px;
+  }
+  .section-title {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.25rem;
+    font-weight: 800;
+  }
+  .destination-description {
+    color: rgba(19, 19, 24, 0.7);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 14px;
+    width: 309px;
+  }
+  .destination-box img {
+    width: 350px;
+    height: 176px;
+  }
+
+  .destination-img-box1 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+  .destination-img-box2 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+  .destination-img-box3 {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  }
+
+  /* WhyUs */
+  .whyus {
+    max-width: 375px;
+    padding: 0 20px 0 20px;
+  }
+  .whyus h2 {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .whyus > p {
+    color: rgba(19, 19, 24, 0.7);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .whyus-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    width: 335px;
+    height: 289px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    background: rgba(251, 181, 99, 0.05);
+  }
+  .card h3 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .card p {
+    color: #5a5a5d;
+    font-family: Mulish;
+    font-size: 14px;
+    width: 271px;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+  .whyus-card-top {
+    display: block;
+  }
+  .whyus-card-bottom {
+    display: block;
+  }
+  footer {
+    padding-top: 30px;
+  }
+  .footer-top h2 {
+    margin-top: 33.3px;
+  }
+  .footer-content {
+    color: #5a5a5d;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 14px;
+    line-height: 24px;
+    width: 287px;
+  }
+  .footer-top hr {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 }
